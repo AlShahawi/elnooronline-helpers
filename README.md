@@ -113,7 +113,6 @@ composer require elnooronline/helpers:dev-master
     public function run()
     {
         ...
-        $this->call(ContactSeeder::class);
         $this->call(LangsTableSeeder::class);
         $this->call(SettingSeeder::class);
         $this->call(UserSeeder::class);
