@@ -1,0 +1,20 @@
+td{
+	vertical-align: middle !important; 
+}
+.thumbnail {
+    height: 150px;
+    position:relative;
+}
+.thumbnail a.uncheck_file{
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    left: 0;
+}
+.thumbnail a>img, .thumbnail>img {
+    max-height: 120px;
+}
+
+select.bs-select{
+	display: none;
+}

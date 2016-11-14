@@ -1,0 +1,28 @@
+<?php 
+return [
+   'notfication_user_setting_by'  => 'قامة :extends_name بتعيين اعدادات الموقع',
+   'notfication_user_setting'  => 'تم تعيين اعدادات الموقع',
+   'notfication_user_lang_by'  => 'اضاف :extends_name لغة جديدة',
+   'notfication_user_lang'  => 'تم اضافة لغة جديدة',
+   'notfication_user_contact_by'  => 'ارسل :extends_name رسالة جديدة',
+   'notfication_user_contact'  => 'لديك رسالة جديدة',
+   'notfication_user_user_by'  => 'قام :extends_name بانشاء حساب جديد',
+   'notfication_user_user'  => 'تم انشاء حساب جديد',
+   'notfication_user_comment_by'  => 'اضاف :extends_name تعليق جديد',
+   'notfication_user_comment'  => 'تم اضافة تعليق جديد',
+   'notfication_user_category_by'  => 'اضاف :extends_name قسم جديد',
+   'notfication_user_category'  => 'تم اضافة قسم جديد',
+   'notfication_user_menu_by'  => 'اضاف :extends_name قائمة جديدة',
+   'notfication_user_menu'  => 'تم اضافة قائمة جديدة',
+   'notfication_user_page_by'  => 'اضاف :extends_name صفحة جديدة',
+   'notfication_user_page'  => 'تم اضافة صفحة جديدة',
+   'notfication_user_newsletter_by'  => 'اضاف :extends_name بريد الكتروني جديد',
+   'notfication_user_newsletter'  => 'تم اضافة بريد الكتروني جديد',
+   'notfication_user_brand_by'  => 'اضاف :extends_name ماركة جديدة',
+   'notfication_user_brand'  => 'تم اضافة ماركة جديدة',
+   'notfication_user_product_by'  => 'اضاف :extends_name منتج جديد',
+   'notfication_user_product'  => 'تم اضافة منتج جديد',
+   'notfication_user_product_status_by'  => 'اضاف :extends_name خيارات منتج جديدة',
+   'notfication_user_product_status'  => 'تم اضافة خيارات منتج جديدة',
+
+];
