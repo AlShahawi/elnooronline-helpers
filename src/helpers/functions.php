@@ -512,3 +512,30 @@ function newsletter($extends,$row)
         }
     }
 }
+
+function __($relation,$colum,$fallback = '---')
+{
+	return $relation ? $relation->{$colum} : $fallback;
+}
+
+function multiText($request,array $colums = []){
+    $arry = [];
+    foreach ($colums as $k =>$colum) 
+    {
+         $array = array_where($request->all(),function($key,$value)use($colum){
+                return str_contains($key, $colum);
+            });
+
+
+         $i = 0;
+        foreach ($array as $key => $value) 
+        {
+         $arry[$i][$colum] = $value;
+         $i++;
+        }
+  
+    }
+
+    
+    return $arry;
+}
