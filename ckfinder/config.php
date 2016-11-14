@@ -18,8 +18,8 @@
  *
  * @return boolean
  */
-require __DIR__.'/../../../bootstrap/autoload.php';
-$app = require __DIR__.'/../../../bootstrap/app.php';
+require __DIR__.'/../../../../bootstrap/autoload.php';
+$app = require __DIR__.'/../../../../bootstrap/app.php';
 $app->make('Illuminate\Contracts\Http\Kernel')
 ->pushMiddleware(\App\Http\Middleware\EncryptCookies::class)
 ->pushMiddleware(\Illuminate\Session\Middleware\StartSession::class)
