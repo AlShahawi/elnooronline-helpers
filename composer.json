@@ -2,12 +2,6 @@
     "name": "elnooronline/helpers",
     "type":"Library",
     "License":"MIT",
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0.2.x-dev"
-        }
-    },
-    "version":"1.0.2.x-dev",
     "authors": [
         {
             "name": "Ahmed Fathy",
