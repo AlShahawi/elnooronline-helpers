@@ -18,10 +18,7 @@ class CategoriesTableSeeder extends Seeder
                         'name'=>'قسم '.$i,
                         'info'=>'المحتوى '.$i,
                     ],
-                ],function($category)use($i){
-                    $option = $category->options()->create(['key' => 'option'.$i]);
-                    $option->options()->create(['key' => 'sub-option'.$i]);
-                });
+                ]);
         }
 
     }
