@@ -1,6 +1,12 @@
 # Installation
 composer require elnooronline/helpers:dev-master
-   
+  
+
+   .env  => Pusher Api Settings
+
+      PUSHER_APP_ID=
+      PUSHER_KEY=
+      PUSHER_SECRET=
    
    config\app.php  --> providers array
 
@@ -113,6 +119,7 @@ composer require elnooronline/helpers:dev-master
     public function run()
     {
         ...
+        $this->call(ContactSeeder::class);
         $this->call(LangsTableSeeder::class);
         $this->call(SettingSeeder::class);
         $this->call(UserSeeder::class);
@@ -136,3 +143,4 @@ composer require elnooronline/helpers:dev-master
   user : info@elnooronline.com
 
   pass : 123456
+
