@@ -530,7 +530,10 @@ function multiText($request,array $colums = []){
          $i = 0;
         foreach ($array as $key => $value) 
         {
-         $arry[$i][$colum] = $value;
+         if(!empty($value))
+            {
+                $arry[$i][$colum] = $value;
+            }
          $i++;
         }
   
