@@ -10,6 +10,6 @@
 		{!! bsForm::password('password') !!}
 		{!! bsForm::password('password_confirmation') !!}
 		{!! bsForm::textarea('info',auth()->user()->info,['class'=>'editor form-control']) !!}
-		{!! bsForm::image('image',auth()->user()->img('image'))) !!}
+		{!! bsForm::image('image',auth()->user()->img('image')) !!}
 	{!! bsForm::close(['submit'=>'save']) !!}
 @endsection
