@@ -388,19 +388,12 @@ public static function forceDeleteOrRestore(Request $request  ,$id = null,$name,
             if (!$request->has('restore')) 
             {
                 $row->languages()->forceDelete();
-              foreach ($row->options as $option) 
-              {
-                  $option->options()->forceDelete();
-              }
-              $row->options()->forceDelete();
+
               \Files::delete($row,$id);
               $row->forceDelete();
             }else
             {
-              foreach ($row->options as $option) 
-              {
-                  $option->options()->restore();
-              }
+
               $row->restore();
               session()->flash('success',trans('lang.restored',['var'=>trans('lang.'.str_plural(strtolower($name)))]));
             }
