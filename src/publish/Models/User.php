@@ -29,41 +29,6 @@ class User extends Authenticatable
 
    
 
-    public function instructors()
-    {
-        return $this->belongsToMany( User::class,'instructor_student','student_id','instructor_id' );
-    }
-
-
-    public function students()
-    {
-        return $this->belongsToMany( User::class, 'instructor_student', 'instructor_id', 'student_id' );
-    }
-
-
-
-    public function setCity_nameAttribute($name)
-    {
-              $this->attributes["password"] = $name;
-
-    }
-
-
-
-    public function major() {
-
-        return $this->belongsTo('App\Major')->withTrashed();
-
-    }
-
-
-
-    public function role() {
-
-        return $this->belongsTo('App\Role')->withTrashed();
-
-    }
-
 public function permessions()
     {
         return $this->hasMany(Permession::class);
@@ -75,12 +40,6 @@ public function permessions()
         return $this->hasManyThrough(PermessionMethod::class,Permession::class);
     }
 
-
-
-    public function city()
-    {
-        return $this->belongsTo(City::class)->withTrashed();
-    }
 
     public function exportNotfications()
     {
